@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular Client</title>
+
+
+
+    <script src="./Scripts/angular.js"></script>
+    <script src="./Scripts/angular-route.js"></script>
+    <script src="app.js"></script>
+
+    <script src="read/ReadController.js"></script>
+    <script src="create/CreateController.js"></script>
+    <script src="delete/DeleteController.js"></script>
+    <script src="main/MainController.js"></script>
+    <script src="update/UpdateController.js"></script>
+
+
+</head>
+<style>
+    #menu li{
+        display:inline;
+        padding-left: 20px;
+        
+    }
+    #menu{
+        margin: 10px;
+    }
+</style>
+<body ng-app="crudViewer">
+    <ul id="menu">
+        <li><a href="#/Create">Create</a></li>
+        <li><a href="#/Read">Read</a></li>
+        <li><a href="#/Update">Update</a></li>
+        <li><a href="#/Delete">Delete</a></li>
+    </ul>
+    <hr />
+
+
+    <div ng-view></div>
+
+</body>
+
+</html>
+
+
+

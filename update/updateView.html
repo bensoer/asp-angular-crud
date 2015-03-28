@@ -1,0 +1,24 @@
+﻿<div ng-controller="UpdateController">
+    <h3> Update </h3>
+
+    <h4>Enter Id To Update</h4>
+    <div>
+        <input type="text" id="id_input" ng-model="searchData"/><br />
+        <button ng-click="search()">Search</button>
+    </div>
+
+    <br /><br />
+
+
+
+    <div>
+        <label for="categoryName">Category Name</label>
+        <input type="text" id="categoryName" ng-model="updateData.CategoryName" /><br />
+    
+        <input type="hidden" id="categoryID" ng-model="updateData.CategoryID"/> <br />
+        <label for="categoryDescription">Description</label>
+        <input type="text" id="categoryDescription" ng-model="updateData.Description" /><br />  
+        <button ng-click="submit()"> Update Category </button>
+    
+    </div>
+</div>
